@@ -1,0 +1,53 @@
+{
+  "author": {
+    "name": "thera group"
+  },
+  "consumedServices": {
+    "linter": {
+      "versions": {
+        "^1.0.0": "consumeLinter"
+      }
+    },
+    "status-bar": {
+      "versions": {
+        "^1.0.0": "consumeStatusBar"
+      }
+    }
+  },
+  "dependencies": {
+    "interact.js": "^1.2.5",
+    "minimatch": "^3.0.0"
+  },
+  "description": "Thera Linter for weex, based on the origin Linter",
+  "devDependencies": {},
+  "engines": {
+    "atom": ">=0.174.0 <2.0.0"
+  },
+  "homepage": "",
+  "license": "MIT",
+  "main": "./lib/main",
+  "name": "linter",
+  "optionalDependencies": {},
+  "providedServices": {
+    "linter-indie": {
+      "versions": {
+        "1.0.0": "provideIndie"
+      }
+    },
+    "linter-plus-self": {
+      "versions": {
+        "0.1.0": "provideLinter"
+      }
+    }
+  },
+  "readme": "",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "scripts": {
+    "lint": "coffeelint lib && eslint lib"
+  },
+  "version": "1.0.6"
+}

@@ -1,0 +1,2 @@
+'atom-text-editor:not(.mini)':
+  'cmd-.': 'linter:next-error'
