@@ -19,6 +19,19 @@ class Commands
           @weexRuntimeLint msg, editorLinter
       'linter:weex-test': => @weexRuntimeTest()
 
+    @subscriptions.add(atom.commands.add atom.commands.rootNode, 'thera-live-server:start', () =>
+      console.log('start'))
+    #   activeEditor = atom.workspace.getActiveTextEditor()
+    #   if activeEditor
+    #     activeEditor.lineTailManager.setHide(false)
+    # )
+
+    @subscriptions.add(atom.commands.add atom.commands.rootNode, 'thera-live-server:stop', () =>
+      console.log('stop'))
+
+    @subscriptions.add(atom.commands.add atom.commands.rootNode, 'thera-live-server:debug', () =>
+      console.log('debug'))
+
     # Default values
     @index = null
 
