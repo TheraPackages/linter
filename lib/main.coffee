@@ -12,7 +12,7 @@ module.exports = Linter =
       title: 'Lint As You Type Interval'
       description: 'Interval at which providers are triggered as you type (in ms)'
       type: 'integer'
-      default: 1000
+      default: 500
       order: 1
 
     ignoredMessageTypes:
