@@ -132,7 +132,7 @@ module.exports = Linter =
 
   activate: (state) ->
     Linter.state = state
-    LinterPlus = require('./linter.coffee')
+    LinterPlus = require('./linter')
     @instance = new LinterPlus state
 
   serialize: ->
